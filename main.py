@@ -109,7 +109,7 @@ async def cc(message: types.Message):
             await message.reply("Err...")
             return
     try:
-        bind = await Gate(asd[0][1])
+        bind = await Bypass(asd[0][1])
         print(bind)
         await message.reply(f"📖 EASY BYPASS YOUR LINK (by GGCheater): " + bind["link_full_val"])
     except KeyError as e:
