@@ -61,7 +61,7 @@ async def anti_flood(*args, **kwargs):
     await m.answer("Не гоняй.")            
             
             
-async def mama(click):
+async def Bypass(click):
     proxies = {'http': ''} #резидент прокси (можно и простой http)
     s = requests.session()
     s.proxies.update(proxies)
@@ -109,7 +109,7 @@ async def cc(message: types.Message):
             await message.reply("Err...")
             return
     try:
-        bind = await mama(asd[0][1])
+        bind = await Gate(asd[0][1])
         print(bind)
         await message.reply(f"📖 EASY BYPASS YOUR LINK (by GGCheater): " + bind["link_full_val"])
     except KeyError as e:
